@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 
-public class SerilizationEx {
+public class SerializationEx {
     public static void main(String[] args) {
         Student student = new Student("Sergey", 23, 1);
         try(ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("student.bin"))) {
